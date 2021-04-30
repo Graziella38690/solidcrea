@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description de l'association solidcrea" />
+    <title>Solidcrea</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Solid'créa, <br> La boite créative pour tous.</h1>
+    </header>
+
+    <main>
+
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#22a6b3;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./atelier.html">Atelier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contact.html">Nous contacter</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+        
+
+
+
+
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12" id="topPart">
+                    <div class="container">
+                        <div class="row elements">
+                            <div class="col-sm-4">
+                                <img src="./image/mail.png" alt="mail">
+                            </div>
+                            <div class="col-sm-8">
+                                <h3>Scrapper</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, ea veniam.
+                                    Commodi, eos reprehenderit! Accusamus perspiciatis minus, vitae adipisci dicta
+                                    possimus natus, distinctio delectus libero a expedita tempora, inventore quisquam
+                                    consequuntur laborum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="container">
+ 
+            <div class="row">
+                
+                <div class="col-xl-12  ">
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Nom *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Veuillez entrer votre nom *" required="required" data-error="Nom est obligatoire.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Prénom *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Veuillez entre votre prénom *" required="required" data-error="Prénom est obligatoire.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Veuillez entrer votre email *" required="required" data-error="Un email valid est obligatoire.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Sujet*</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Veuillez préciser votre besoin.">
+                                            <option value=""></option>
+                                            <option value="Demande de devis">Nos ateliers</option>
+                                            <option value="Demande générale">Nos collectes</option>
+                                            <option value="Demander une facture">Devenir bénévoles</option>
+                                            <option value="Autre">Autre</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Votre Message *" rows="4" required="required" data-error="Veuillez remplir le champ Message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Envoyer">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted">
+                                        <strong>*</strong> Ces champs sont obligatoires.</p>
+                                </div>
+                            </div>
+                        </div>
+     
+                    </form>
+     
+                </div>
+
+
+
+        </div>
+
+
+
+        <div id="transition">
+            <img src="./image/crayon.png" alt="crayon">
+        </div>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </main>
+</body>
+
+</html>
